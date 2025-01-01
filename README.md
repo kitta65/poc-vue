@@ -1,3 +1,3 @@
-# recipe-vue
+# POC of Vue
 
 WIP
