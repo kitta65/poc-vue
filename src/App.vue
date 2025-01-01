@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import Counter from "./components/Counter.vue";
+import List from "./components/List.vue";
 </script>
 
 <template>
   <Counter />
+  <List />
 </template>
 
 <style scoped>
