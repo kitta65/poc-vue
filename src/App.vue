@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Counter from "./components/Counter.vue";
+import Emit from "./components/Emit.vue";
 import List from "./components/List.vue";
 import Form from "./components/Form.vue";
 import Watch from "./components/Watch.vue";
@@ -11,6 +12,7 @@ import Watch from "./components/Watch.vue";
   <!-- <Form /> causes wrong syntax highlight -->
   <Form></Form>
   <Watch />
+  <Emit @custom-event="console.log('received custom-event!')" />
 </template>
 
 <style scoped>
