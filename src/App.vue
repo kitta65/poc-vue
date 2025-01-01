@@ -2,12 +2,15 @@
 import Counter from "./components/Counter.vue";
 import List from "./components/List.vue";
 import Form from "./components/Form.vue";
+import Watch from "./components/Watch.vue";
 </script>
 
 <template>
   <Counter />
   <List />
-  <Form />
+  <!-- <Form /> causes wrong syntax highlight -->
+  <Form></Form>
+  <Watch />
 </template>
 
 <style scoped>
