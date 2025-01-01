@@ -4,15 +4,16 @@ import Emit from "./components/Emit.vue";
 import List from "./components/List.vue";
 import Form from "./components/Form.vue";
 import Watch from "./components/Watch.vue";
+import Property from "./components/Property.vue";
 </script>
 
 <template>
   <Counter />
   <List />
-  <!-- <Form /> causes wrong syntax highlight -->
-  <Form></Form>
+  <Form />
   <Watch />
   <Emit @custom-event="console.log('received custom-event!')" />
+  <Property text="pass as props">pass as slot</Property>
 </template>
 
 <style scoped>
