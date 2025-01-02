@@ -12,6 +12,9 @@ import { sq } from "./utils";
 </script>
 
 <template>
+  <!-- this is used by e2e test -->
+  <p id="elemnt-for-test">find me!</p>
+
   <Counter />
   <CounterV2 />
   <List />
