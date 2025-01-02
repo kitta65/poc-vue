@@ -6,6 +6,7 @@ import Form from "./components/Form.vue";
 import Watch from "./components/Watch.vue";
 import Property from "./components/Property.vue";
 import Routing from "./components/Routing.vue";
+import State from "./components/State.vue";
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import Routing from "./components/Routing.vue";
   <div>
     <Routing />
   </div>
+  <State />
 </template>
 
 <style scoped>
