@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Counter from "./components/Counter.vue";
+import CounterV2 from "./components/CounterV2.vue";
 import Emit from "./components/Emit.vue";
 import List from "./components/List.vue";
 import Form from "./components/Form.vue";
@@ -7,10 +8,12 @@ import Watch from "./components/Watch.vue";
 import Property from "./components/Property.vue";
 import Routing from "./components/Routing.vue";
 import State from "./components/State.vue";
+import { sq } from "./utils";
 </script>
 
 <template>
   <Counter />
+  <CounterV2 />
   <List />
   <Form />
   <Watch />
@@ -20,6 +23,7 @@ import State from "./components/State.vue";
     <Routing />
   </div>
   <State />
+  <p>sq: {{ sq(2) }}</p>
 </template>
 
 <style scoped>

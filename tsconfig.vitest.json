@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.app.json",
+  "include": ["tests/**/*", "env.d.ts"],
+  "exclude": [],
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.vitest.tsbuildinfo",
+
+    // needed by useCounter.test.ts
+    "lib": ["DOM"],
+    "types": ["node", "vitest/globals"]
+  }
+}
