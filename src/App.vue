@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Counter from "./components/Counter.vue";
+import CounterV2 from "./components/CounterV2.vue";
 import Emit from "./components/Emit.vue";
 import List from "./components/List.vue";
 import Form from "./components/Form.vue";
@@ -12,6 +13,7 @@ import { sq } from "./utils";
 
 <template>
   <Counter />
+  <CounterV2 />
   <List />
   <Form />
   <Watch />
