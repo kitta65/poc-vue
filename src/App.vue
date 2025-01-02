@@ -7,6 +7,7 @@ import Watch from "./components/Watch.vue";
 import Property from "./components/Property.vue";
 import Routing from "./components/Routing.vue";
 import State from "./components/State.vue";
+import { sq } from "./utils";
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import State from "./components/State.vue";
     <Routing />
   </div>
   <State />
+  <p>sq: {{ sq(2) }}</p>
 </template>
 
 <style scoped>
