@@ -5,6 +5,7 @@ import List from "./components/List.vue";
 import Form from "./components/Form.vue";
 import Watch from "./components/Watch.vue";
 import Property from "./components/Property.vue";
+import Routing from "./components/Routing.vue";
 </script>
 
 <template>
@@ -14,6 +15,9 @@ import Property from "./components/Property.vue";
   <Watch />
   <Emit @custom-event="console.log('received custom-event!')" />
   <Property text="pass as props">pass as slot</Property>
+  <div>
+    <Routing />
+  </div>
 </template>
 
 <style scoped>
