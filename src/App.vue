@@ -22,10 +22,11 @@ import { sq } from "./utils";
   <Watch />
   <Emit @custom-event="console.log('received custom-event!')" />
   <Property text="pass as props">pass as slot</Property>
-  <div>
-    <Routing />
-  </div>
+  <p>Routing.vue</p>
+  <Routing />
+  <p>State.vue</p>
   <State />
+  <p>utils.ts</p>
   <p>sq: {{ sq(2) }}</p>
 </template>
 

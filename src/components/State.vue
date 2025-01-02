@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { simpleGlobalState } from "@/stores/state";
+import { useSimpleCounter } from "@/stores/state";
+const { count, increment } = useSimpleCounter();
 </script>
 
 <template>
   <p>update global state</p>
   <!-- call function explicitly (do not remove `()`) -->
-  <button @click="simpleGlobalState.increment()">
-    {{ simpleGlobalState.value }}
+  <button @click="increment()">
+    {{ count }}
   </button>
 </template>

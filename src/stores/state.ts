@@ -1,12 +1,14 @@
 import { ref, computed, reactive } from "vue";
 import { defineStore } from "pinia";
 
-export const simpleGlobalState = reactive({
-  value: 0,
-  increment() {
-    this.value++;
-  },
-});
+const globalCount = ref(0);
+function globalIncrement() {
+  globalCount.value++;
+}
+
+export function useSimpleCounter() {
+  return { count: globalCount, increment: globalIncrement };
+}
 
 export const useCounterStore = defineStore("counter", () => {
   const count = ref(0);
