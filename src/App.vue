@@ -15,18 +15,34 @@ import { sq } from "./utils";
   <!-- this is used by e2e test -->
   <p id="elemnt-for-test">find me!</p>
 
+  <h1>Counter</h1>
   <Counter />
+
+  <h1>CounterV2</h1>
   <CounterV2 />
+
+  <h1>List</h1>
   <List />
+
+  <h1>Form</h1>
   <Form />
+
+  <h1>Watch</h1>
   <Watch />
+
+  <h1>Emit</h1>
   <Emit @custom-event="console.log('received custom-event!')" />
+
+  <h1>Property</h1>
   <Property text="pass as props">pass as slot</Property>
-  <p>Routing.vue</p>
+
+  <h1>Routing</h1>
   <Routing />
-  <p>State.vue</p>
+
+  <h1>State</h1>
   <State />
-  <p>utils.ts</p>
+
+  <h1>Utils</h1>
   <p>sq: {{ sq(2) }}</p>
 </template>
 
