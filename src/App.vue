@@ -7,6 +7,8 @@ import Form from "./components/Form.vue";
 import Watch from "./components/Watch.vue";
 import Property from "./components/Property.vue";
 import Routing from "./components/Routing.vue";
+import SlotSingle from "./components/SlotSingle.vue";
+import SlotMultiple from "./components/SlotMultiple.vue";
 import State from "./components/State.vue";
 import { sq } from "./utils";
 </script>
@@ -38,6 +40,13 @@ import { sq } from "./utils";
 
   <h1>Routing</h1>
   <Routing />
+
+  <h1>Slot</h1>
+  <SlotSingle>signle</SlotSingle>
+  <SlotMultiple>
+    <template v-slot:first>foo</template>
+    <template #second>bar</template>
+  </SlotMultiple>
 
   <h1>State</h1>
   <State />
